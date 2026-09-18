@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tushar Chauhan — Frontend Developer &amp; HubSpot CMS Developer</title>
+
+  <meta name="description" content="Tushar Chauhan is a Frontend Developer and HubSpot CMS Developer in Ahmedabad, India with 4 years of experience building high-performance websites with HubSpot CMS, WordPress, JavaScript, and GSAP." />
+  <meta name="author" content="Tushar Chauhan" />
+  <meta name="theme-color" content="#08090c" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Tushar Chauhan — Frontend Developer &amp; HubSpot CMS Developer" />
+  <meta property="og:description" content="4 years of experience building high-performance, accessible websites with HubSpot CMS, WordPress, JavaScript, and GSAP." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- ══ Accessibility ══ -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ══ Scroll progress ══ -->
+  <div class="progress" aria-hidden="true"><span class="progress__bar" id="progressBar"></span></div>
+
+  <!-- ══ Ambient background ══ -->
+  <div class="ambient" aria-hidden="true">
+    <span class="ambient__orb ambient__orb--1"></span>
+    <span class="ambient__orb ambient__orb--2"></span>
+    <span class="ambient__orb ambient__orb--3"></span>
+    <span class="ambient__grid"></span>
+    <span class="ambient__noise"></span>
+  </div>
+
+  <!-- ══════════════ HEADER ══════════════ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#hero" class="brand" aria-label="Tushar Chauhan — home">
+        <span class="brand__mark" aria-hidden="true">TC</span>
+        <span class="brand__text">Tushar<span class="brand__dot">.</span></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Primary">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#about">About</a></li>
+          <li><a class="nav__link" href="#experience">Experience</a></li>
+          <li><a class="nav__link" href="#projects">Work</a></li>
+          <li><a class="nav__link" href="#skills">Skills</a></li>
+          <li><a class="nav__link" href="#education">Education</a></li>
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light theme">
+          <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4.2" />
+            <path d="M12 2.5v2.6M12 18.9v2.6M2.5 12h2.6M18.9 12h2.6M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M18.7 5.3l-1.8 1.8M7.1 16.9l-1.8 1.8" />
+          </svg>
+          <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.5 14.2A8.4 8.4 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7Z" />
+          </svg>
+        </button>
+
+        <a class="btn btn--sm btn--primary header__cta" data-magnetic href="#contact">
+          <span>Let's talk</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ══ Mobile navigation ══ -->
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <nav aria-label="Mobile">
+      <ul class="mobile-nav__list">
+        <li><a href="#about"><span class="mobile-nav__num">01</span> About</a></li>
+        <li><a href="#experience"><span class="mobile-nav__num">02</span> Experience</a></li>
+        <li><a href="#projects"><span class="mobile-nav__num">03</span> Work</a></li>
+        <li><a href="#skills"><span class="mobile-nav__num">04</span> Skills</a></li>
+        <li><a href="#education"><span class="mobile-nav__num">05</span> Education</a></li>
+        <li><a href="#contact"><span class="mobile-nav__num">06</span> Contact</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-nav__footer">
+      <a href="mailto:itstushar.developer@gmail.com">itstushar.developer@gmail.com</a>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ══════════════ HERO ══════════════ -->
+    <section class="hero" id="hero">
+      <div class="container hero__inner">
+
+        <p class="hero__eyebrow" data-reveal>
+          <span class="pulse" aria-hidden="true"></span>
+          Ahmedabad, India
+        </p>
+
+        <h1 class="hero__title">
+          <span class="line" data-reveal data-reveal-delay="60">Tushar</span>
+          <span class="line" data-reveal data-reveal-delay="140">Chauhan<span class="hero__period">.</span></span>
+        </h1>
+
+        <p class="hero__role" data-reveal data-reveal-delay="220">
+          Frontend Developer <span class="hero__sep" aria-hidden="true">/</span>
+          <em>HubSpot CMS Developer</em>
+        </p>
+
+        <p class="hero__lede" data-reveal data-reveal-delay="300">
+          I design, build, and maintain high-performance websites with HubSpot CMS, WordPress,
+          and modern JavaScript — with a strong focus on performance, SEO, accessibility, and motion.
+        </p>
+
+        <div class="hero__actions" data-reveal data-reveal-delay="380">
+          <a class="btn btn--primary" data-magnetic href="#projects">
+            <span>View my work</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M12 5.5 18.5 12 12 18.5" /></svg>
+          </a>
+          <a class="btn btn--ghost" data-magnetic href="mailto:itstushar.developer@gmail.com">
+            <span>Get in touch</span>
+          </a>
+        </div>
+
+        <!-- Stats -->
+        <dl class="stats" data-reveal data-reveal-delay="460">
+          <div class="stat">
+            <dt class="stat__label">Years of experience</dt>
+            <dd class="stat__value"><span data-count="4">0</span></dd>
+          </div>
+          <div class="stat">
+            <dt class="stat__label">Client projects delivered</dt>
+            <dd class="stat__value"><span data-count="20">0</span><i>+</i></dd>
+          </div>
+          <div class="stat">
+            <dt class="stat__label">Performance improvement</dt>
+            <dd class="stat__value"><i class="stat__pre">up to</i><span data-count="30">0</span><i>%</i></dd>
+          </div>
+        </dl>
+
+      </div>
+
+      <a class="scroll-cue" href="#about" aria-label="Scroll to about section">
+        <span class="scroll-cue__line" aria-hidden="true"></span>
+        <span class="scroll-cue__text">Scroll</span>
+      </a>
+    </section>
+
+    <!-- ══════════════ ABOUT ══════════════ -->
+    <section class="section" id="about">
+      <div class="container">
+
+        <header class="section__head">
+          <p class="section__eyebrow" data-reveal><span class="section__num">01</span> About</p>
+          <h2 class="section__title" data-reveal data-reveal-delay="80">
+            Building the web with <em>precision</em> and&nbsp;polish.
+          </h2>
+        </header>
+
+        <div class="about">
+          <div class="about__body" data-reveal data-reveal-delay="120">
+            <p class="about__lead">
+              Results-driven Frontend Developer with 4 years of professional experience in designing,
+              developing, and maintaining high-performance websites using HubSpot CMS, WordPress, HTML5,
+              CSS3, SCSS, JavaScript, jQuery, HubL, and HubDB.
+            </p>
+            <p>
+              Experienced in building custom themes, reusable modules, responsive landing pages, and
+              dynamic content-driven websites with a strong focus on performance optimization, SEO,
+              accessibility (WCAG), and user experience.
+            </p>
+            <p>
+              Successfully delivered 20+ client projects, improved website performance by up to 30%,
+              and developed advanced interactive animations using GSAP and Lottie while collaborating
+              with cross-functional teams to deliver scalable digital solutions.
+            </p>
+          </div>
+
+          <aside class="about__aside">
+            <article class="feature-card" data-spotlight data-reveal data-reveal-delay="180">
+              <span class="feature-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h9" /></svg>
+              </span>
+              <h3>Custom themes &amp; modules</h3>
+              <p>Scalable HubSpot themes, templates, and reusable HubL modules — plus fully custom WordPress builds with ACF and Gutenberg.</p>
+            </article>
+
+            <article class="feature-card" data-spotlight data-reveal data-reveal-delay="240">
+              <span class="feature-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="m13 2-8.5 11.5H11l-1 8.5 8.5-11.5H12l1-8.5Z" /></svg>
+              </span>
+              <h3>Performance &amp; Core Web Vitals</h3>
+              <p>Code optimization, lazy loading, asset compression, and image optimization that measurably improve load speed.</p>
+            </article>
+
+            <article class="feature-card" data-spotlight data-reveal data-reveal-delay="300">
+              <span class="feature-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="M3.4 9.5h17.2M3.4 14.5h17.2M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18" /></svg>
+              </span>
+              <h3>SEO &amp; accessibility</h3>
+              <p>SEO best practices and WCAG standards applied throughout, improving search visibility and real user experience.</p>
+            </article>
+
+            <article class="feature-card" data-spotlight data-reveal data-reveal-delay="360">
+              <span class="feature-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M3 17c4-10 14 4 18-6" /><circle cx="3" cy="17" r="1.6" /><circle cx="21" cy="11" r="1.6" /></svg>
+              </span>
+              <h3>Motion &amp; interaction</h3>
+              <p>Advanced scroll-based animation with GSAP, ScrollTrigger, and Lottie — tuned so motion never costs performance.</p>
+            </article>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ EXPERIENCE ══════════════ -->
+    <section class="section section--alt" id="experience">
+      <div class="container">
+
+        <header class="section__head">
+          <p class="section__eyebrow" data-reveal><span class="section__num">02</span> Experience</p>
+          <h2 class="section__title" data-reveal data-reveal-delay="80">
+            Where I've been <em>shipping</em>.
+          </h2>
+        </header>
+
+        <div class="timeline">
+          <article class="job" data-reveal>
+            <div class="job__meta">
+              <span class="tag tag--live">
+                <span class="pulse" aria-hidden="true"></span> Current
+              </span>
+              <p class="job__period">August 2022 — Present</p>
+              <p class="job__place">Ahmedabad, India</p>
+            </div>
+
+            <div class="job__body">
+              <h3 class="job__role">Frontend Developer <span aria-hidden="true">/</span> HubSpot CMS Developer</h3>
+              <p class="job__company">ZealousWeb Technologies Pvt. Ltd.</p>
+
+              <h4 class="job__subtitle">Key responsibilities</h4>
+              <ul class="job__list">
+                <li data-reveal data-reveal-delay="40">Develop and maintain responsive websites, landing pages, and custom web applications using HubSpot CMS, WordPress, HTML5, CSS3, SCSS, JavaScript, and jQuery.</li>
+                <li data-reveal data-reveal-delay="80">Build custom HubSpot themes, templates, reusable modules, and HubL components following scalable development practices.</li>
+                <li data-reveal data-reveal-delay="120">Create dynamic and data-driven content experiences using HubDB, reusable components, and custom modules.</li>
+                <li data-reveal data-reveal-delay="160">Develop fully customized WordPress websites using Advanced Custom Fields (ACF), Custom Post Types, Gutenberg Blocks, and custom templates.</li>
+                <li data-reveal data-reveal-delay="200">Convert Figma and Adobe XD designs into responsive, pixel-perfect websites with cross-browser compatibility.</li>
+                <li data-reveal data-reveal-delay="240">Optimize website performance through code optimization, lazy loading, asset compression, image optimization, and Core Web Vitals improvements.</li>
+                <li data-reveal data-reveal-delay="280">Implement SEO best practices and Web Accessibility (WCAG) standards to improve search visibility and user experience.</li>
+                <li data-reveal data-reveal-delay="320">Build advanced frontend interactions and animations using GSAP, ScrollTrigger, Lottie, CSS animations, and JavaScript.</li>
+                <li data-reveal data-reveal-delay="360">Troubleshoot and resolve complex frontend issues related to animations, responsiveness, browser compatibility, and website performance.</li>
+                <li data-reveal data-reveal-delay="400">Collaborate with UI/UX designers, backend developers, QA engineers, and project managers to deliver high-quality digital experiences.</li>
+                <li data-reveal data-reveal-delay="440">Successfully delivered 20+ client projects, consistently meeting deadlines while maintaining high development standards.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ PROJECTS ══════════════ -->
+    <section class="section" id="projects">
+      <div class="container">
+
+        <header class="section__head">
+          <p class="section__eyebrow" data-reveal><span class="section__num">03</span> Work</p>
+          <h2 class="section__title" data-reveal data-reveal-delay="80">
+            What I <em>build</em>, day to day.
+          </h2>
+          <p class="section__lede" data-reveal data-reveal-delay="140">
+            Four areas of work that make up the bulk of my delivery.
+          </p>
+        </header>
+
+        <div class="projects">
+
+          <!-- Project 01 -->
+          <article class="project" data-spotlight data-reveal>
+            <div class="project__head">
+              <span class="project__index" aria-hidden="true">01</span>
+              <h3 class="project__title">HubSpot CMS Website Development</h3>
+            </div>
+            <p class="project__intro">
+              Designed and developed custom websites using HubSpot CMS, including reusable themes,
+              templates, landing pages, and modules.
+            </p>
+            <ul class="project__list">
+              <li>Built scalable frontend architectures using HubL, HubDB, HTML5, CSS3, SCSS, and JavaScript.</li>
+              <li>Created reusable modules and dynamic content structures to simplify content management for marketing teams.</li>
+              <li>Implemented responsive layouts with pixel-perfect accuracy while maintaining accessibility and SEO standards.</li>
+              <li>Integrated HubSpot CRM functionality and marketing assets to improve lead generation workflows.</li>
+              <li>Improved website speed, responsiveness, and Core Web Vitals through frontend optimization techniques.</li>
+            </ul>
+            <ul class="chips" aria-label="Technologies used">
+              <li>HubSpot CMS</li><li>HubL</li><li>HubDB</li><li>SCSS</li><li>JavaScript</li>
+            </ul>
+          </article>
+
+          <!-- Project 02 -->
+          <article class="project" data-spotlight data-reveal data-reveal-delay="80">
+            <div class="project__head">
+              <span class="project__index" aria-hidden="true">02</span>
+              <h3 class="project__title">Advanced Frontend Animation &amp; Interactive Experiences</h3>
+            </div>
+            <p class="project__intro">
+              Highly interactive interfaces where motion is designed, measured, and optimized.
+            </p>
+            <ul class="project__list">
+              <li>Developed highly interactive user interfaces using GSAP, ScrollTrigger, Lottie, CSS animations, and JavaScript.</li>
+              <li>Created advanced scroll-based animations, parallax effects, page transitions, timeline animations, hover interactions, and SVG animations.</li>
+              <li>Solved complex animation challenges involving multiple timelines, responsive layouts, dynamic content, and cross-browser rendering issues.</li>
+              <li>Optimized animation performance by reducing unnecessary DOM updates, improving rendering efficiency, and minimizing layout shifts.</li>
+              <li>Built reusable animation components that accelerated development and maintained design consistency across multiple client projects.</li>
+              <li>Delivered visually engaging websites while maintaining excellent loading speed and accessibility compliance.</li>
+            </ul>
+            <ul class="chips" aria-label="Technologies used">
+              <li>GSAP</li><li>ScrollTrigger</li><li>Lottie</li><li>CSS Animations</li><li>SVG</li>
+            </ul>
+          </article>
+
+          <!-- Project 03 -->
+          <article class="project" data-spotlight data-reveal data-reveal-delay="160">
+            <div class="project__head">
+              <span class="project__index" aria-hidden="true">03</span>
+              <h3 class="project__title">Custom WordPress Development</h3>
+            </div>
+            <p class="project__intro">
+              Bespoke WordPress builds designed around how the client actually manages content.
+            </p>
+            <ul class="project__list">
+              <li>Built custom WordPress websites using ACF, Gutenberg Blocks, Custom Post Types, HTML5, CSS3, SCSS, JavaScript, and jQuery.</li>
+              <li>Developed reusable content components and flexible content layouts to simplify website management.</li>
+              <li>Implemented custom functionalities and third-party integrations based on client requirements.</li>
+              <li>Improved website maintainability through reusable templates and scalable frontend architecture.</li>
+              <li>Enhanced website performance using optimized assets, lazy loading, caching strategies, and clean code practices.</li>
+            </ul>
+            <ul class="chips" aria-label="Technologies used">
+              <li>WordPress</li><li>ACF</li><li>Gutenberg Blocks</li><li>Custom Post Types</li><li>jQuery</li>
+            </ul>
+          </article>
+
+          <!-- Project 04 -->
+          <article class="project" data-spotlight data-reveal data-reveal-delay="240">
+            <div class="project__head">
+              <span class="project__index" aria-hidden="true">04</span>
+              <h3 class="project__title">Landing Pages &amp; Marketing Websites</h3>
+            </div>
+            <p class="project__intro">
+              Conversion-focused pages built from design files with pixel-perfect fidelity.
+            </p>
+            <ul class="project__list">
+              <li>Developed responsive landing pages for marketing campaigns, lead generation, and promotional websites.</li>
+              <li>Converted Figma and Adobe XD designs into pixel-perfect, responsive frontend implementations.</li>
+              <li>Worked closely with designers and marketing teams to maximize user engagement and conversion rates.</li>
+              <li>Delivered optimized landing pages following modern frontend, SEO, and accessibility best practices.</li>
+            </ul>
+            <ul class="chips" aria-label="Technologies used">
+              <li>Figma</li><li>Adobe XD</li><li>Responsive Design</li><li>SEO</li><li>WCAG</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ SKILLS ══════════════ -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+
+        <header class="section__head">
+          <p class="section__eyebrow" data-reveal><span class="section__num">04</span> Skills</p>
+          <h2 class="section__title" data-reveal data-reveal-delay="80">
+            The <em>toolkit</em>.
+          </h2>
+        </header>
+
+        <div class="skills">
+
+          <article class="skill-group" data-spotlight data-reveal>
+            <h3 class="skill-group__title">Frontend Development</h3>
+            <ul class="skill-group__list">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>SCSS</li>
+              <li>JavaScript (ES6+)</li>
+              <li>jQuery</li>
+            </ul>
+          </article>
+
+          <article class="skill-group" data-spotlight data-reveal data-reveal-delay="80">
+            <h3 class="skill-group__title">CMS &amp; Frameworks</h3>
+            <ul class="skill-group__list">
+              <li>HubSpot CMS</li>
+              <li>HubL</li>
+              <li>WordPress</li>
+              <li>Advanced Custom Fields (ACF)</li>
+              <li>ACF with Custom Gutenberg Blocks</li>
+            </ul>
+          </article>
+
+          <article class="skill-group" data-spotlight data-reveal data-reveal-delay="160">
+            <h3 class="skill-group__title">Development</h3>
+            <ul class="skill-group__list">
+              <li>Custom Theme Development</li>
+              <li>Custom Module Development</li>
+              <li>Responsive Web Design</li>
+              <li>Cross-Browser Compatibility</li>
+              <li>Website Performance Optimization</li>
+              <li>Core Web Vitals Optimization</li>
+              <li>SEO Optimization</li>
+              <li>Web Accessibility (WCAG)</li>
+            </ul>
+          </article>
+
+          <article class="skill-group" data-spotlight data-reveal data-reveal-delay="240">
+            <h3 class="skill-group__title">Animation</h3>
+            <ul class="skill-group__list">
+              <li>GSAP</li>
+              <li>ScrollTrigger</li>
+              <li>Lottie</li>
+              <li>CSS Animations</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- Tools marquee -->
+      <div class="marquee" data-reveal>
+        <p class="marquee__label">Technical tools</p>
+        <div class="marquee__track">
+          <ul class="marquee__row">
+            <li>Visual Studio Code</li><li>Antigravity</li><li>Cursor</li>
+            <li>HubSpot Design Manager</li><li>Git / GitHub</li>
+            <li>Figma / XD / Photoshop</li><li>Chrome DevTools</li>
+            <li>ClickUp / Trello / Slack</li>
+          </ul>
+          <ul class="marquee__row" aria-hidden="true">
+            <li>Visual Studio Code</li><li>Antigravity</li><li>Cursor</li>
+            <li>HubSpot Design Manager</li><li>Git / GitHub</li>
+            <li>Figma / XD / Photoshop</li><li>Chrome DevTools</li>
+            <li>ClickUp / Trello / Slack</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ EDUCATION ══════════════ -->
+    <section class="section" id="education">
+      <div class="container">
+
+        <header class="section__head">
+          <p class="section__eyebrow" data-reveal><span class="section__num">05</span> Education</p>
+          <h2 class="section__title" data-reveal data-reveal-delay="80">
+            Foundation &amp; <em>credentials</em>.
+          </h2>
+        </header>
+
+        <div class="edu">
+
+          <div class="edu__col">
+            <ol class="edu-list">
+              <li class="edu-item" data-reveal>
+                <span class="edu-item__year">2022</span>
+                <div>
+                  <h3 class="edu-item__degree">Bachelor of Computer Applications (BCA)</h3>
+                  <p class="edu-item__school">Shri B. J. Patel Umiya BCA College</p>
+                  <p class="edu-item__detail">CGPA: 6.46</p>
+                </div>
+              </li>
+
+              <li class="edu-item" data-reveal data-reveal-delay="80">
+                <span class="edu-item__year">2019</span>
+                <div>
+                  <h3 class="edu-item__degree">Higher Secondary School Certificate (HSC)</h3>
+                  <p class="edu-item__school">Geeta High School</p>
+                </div>
+              </li>
+
+              <li class="edu-item" data-reveal data-reveal-delay="160">
+                <span class="edu-item__year">2017</span>
+                <div>
+                  <h3 class="edu-item__degree">Secondary School Certificate (SSC)</h3>
+                  <p class="edu-item__school">Nest Public School</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <div class="edu__col">
+            <article class="cert" data-spotlight data-reveal data-reveal-delay="120">
+              <div class="cert__top">
+                <span class="cert__badge" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M12 2.8 14.6 8l5.9.9-4.3 4.1 1 5.9L12 16.1 6.8 18.9l1-5.9L3.5 8.9 9.4 8 12 2.8Z" /></svg>
+                </span>
+                <p class="cert__label">Certification</p>
+              </div>
+              <h3 class="cert__title">HubSpot CMS Developer Certification</h3>
+              <p class="cert__issuer">HubSpot Academy</p>
+              <p class="cert__desc">
+                Certified in HubSpot CMS Development, covering HubL, Custom Theme Development,
+                Custom Modules, HubDB, Responsive Web Design, Website Performance Optimization,
+                SEO, Accessibility (WCAG), Landing Page Development, and CMS Best Practices.
+              </p>
+            </article>
+
+            <article class="langs" data-reveal data-reveal-delay="200">
+              <h3 class="langs__title">Languages</h3>
+              <ul class="chips chips--lg">
+                <li>English</li><li>Hindi</li><li>Gujarati</li>
+              </ul>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ CONTACT ══════════════ -->
+    <section class="section section--contact" id="contact">
+      <div class="container">
+
+        <header class="section__head section__head--center">
+          <p class="section__eyebrow" data-reveal><span class="section__num">06</span> Contact</p>
+          <h2 class="section__title section__title--xl" data-reveal data-reveal-delay="80">
+            Let's build something <em>fast</em>, accessible, and&nbsp;beautiful.
+          </h2>
+        </header>
+
+        <div class="contact-cta" data-reveal data-reveal-delay="160">
+          <a class="btn btn--primary btn--lg" data-magnetic href="mailto:itstushar.developer@gmail.com">
+            <span>itstushar.developer@gmail.com</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M12 5.5 18.5 12 12 18.5" /></svg>
+          </a>
+        </div>
+
+        <ul class="contact-grid">
+          <li class="contact-card" data-spotlight data-reveal data-reveal-delay="200">
+            <span class="contact-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="2.8" y="4.8" width="18.4" height="14.4" rx="2.4" /><path d="m3.4 6.6 8.6 6 8.6-6" /></svg>
+            </span>
+            <p class="contact-card__label">Email</p>
+            <a class="contact-card__value" href="mailto:itstushar.developer@gmail.com">itstushar.developer@gmail.com</a>
+          </li>
+
+          <li class="contact-card" data-spotlight data-reveal data-reveal-delay="260">
+            <span class="contact-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M6.4 3.5h3.1l1.6 4-2 1.4a12.5 12.5 0 0 0 6 6l1.4-2 4 1.6v3.1a1.9 1.9 0 0 1-2.1 1.9A16.8 16.8 0 0 1 4.5 5.6 1.9 1.9 0 0 1 6.4 3.5Z" /></svg>
+            </span>
+            <p class="contact-card__label">Phone</p>
+            <a class="contact-card__value" href="tel:+919428250270">+91 94282 50270</a>
+          </li>
+
+          <li class="contact-card" data-spotlight data-reveal data-reveal-delay="320">
+            <span class="contact-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 21s7-5.7 7-11a7 7 0 1 0-14 0c0 5.3 7 11 7 11Z" /><circle cx="12" cy="10" r="2.6" /></svg>
+            </span>
+            <p class="contact-card__label">Location</p>
+            <p class="contact-card__value">Ahmedabad, India — 382481</p>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════ FOOTER ══════════════ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__name">Tushar Chauhan</p>
+      <p class="footer__meta">Frontend Developer &amp; HubSpot CMS Developer · Ahmedabad, India</p>
+      <p class="footer__copy">&copy; <span id="year">2026</span> — All rights reserved.</p>
+      <a class="footer__top" href="#hero" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5.5M5.5 12 12 5.5 18.5 12" /></svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
