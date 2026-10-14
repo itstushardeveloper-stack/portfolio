@@ -17,12 +17,6 @@
 
 ## 🚀 Featured Projects
 
-### Client & Enterprise Builds (Professional Roles)
-- **[Commence.ai](https://commence.ai/)** — WordPress Development, GSAP ScrollTrigger Animations, Custom Gutenberg Blocks & ACF Pro for an AI Healthcare Data platform.
-- **[Kratos Defense](https://www.kratosdefense.com/)** — Enterprise CMS architecture, high-security WCAG AA compliance, and performance engineering for national security systems contractor.
-- **[Americold](https://www.americold.com/)** — Global cold-chain logistics REIT corporate platform, dynamic facility locators, and interactive map modules.
-- **[Litmos LMS](https://www.litmos.com/)** — High-converting SaaS marketing website for an LMS leader serving 11,000+ organizations and 30M+ learners worldwide.
-
 ### Independent & Personal Builds
 - **[Vellora Overseas](https://velloraoverseas.com/)** — International study & visa consultancy portal with dynamic course guides, student inquiry funnels, and high-conversion UX.
 - **[B.D. Shah Accident Law](https://bdshahaccidentlaw.com/)** — High-trust personal injury and accident law practice website with emergency consultation funnels and local SEO optimization.
@@ -43,4 +37,3 @@
 - **Email**: [itstushar.developer@gmail.com](mailto:itstushar.developer@gmail.com)
 - **LinkedIn**: [linkedin.com/in/tushar-chauhan-developer](https://www.linkedin.com/in/tushar-chauhan-65907a277)
 - **GitHub**: [github.com/itstushardeveloper-stack](https://github.com/itstushardeveloper-stack)
-- **Phone**: +91 94282 50270
